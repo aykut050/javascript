@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <script>
+        var elemanlar=[];
+
+        function elemanlarıGöster(){
+            for(var i=0;i<elemanlar.length;i++){
+                alert(elemanlar[i]);
+            }
+        }
+
+        function pushMetodu(){ //Dizinin sonuna eleman ekler
+            elemanlar.push("Can");
+            elemanlar.push("Ali");
+        }
+        function unshift(){//Dizinin başına ekleme yapar
+            elemanlar.unshift("Sedat");
+            for(var i=0;i<elemanlar.length;i++){
+                alert(elemanlar[i]);
+            }
+        }
+        function sırala(){//Küçükten büyüğe veya alfabetik olarak sıralama yapar.
+            elemanlar.sort();
+            for(var i=0;i<elemanlar.length;i++){
+                alert(elemanlar[i]);
+            }
+        }    
+        function popMetodu(){
+            elemanlar.pop();//Dizinin son elemanını döndürür ve o elemanı diziden çıkarır.
+            for(var i=0;i<elemanlar.length;i++){
+                alert(elemanlar[i]);
+            }
+        }
+        function shiftMetodu(){
+            elemanlar.shift();//Dizinin ilk elemanını döndürür ve diziden çıkarır.
+            for(var i=0;i<elemanlar.length;i++){
+                alert(elemanlar[i]);
+            }
+        }
+        function spliceMetodu(){
+           var sonuc=elemanlar.splice(1,5);//Diziden 1.indisden başlayarak 2 tane eleman çıkaracak.
+           
+        }
+        function concatMetodu(){//İki diziyi birleştiren bir metottur.
+            var dizi=["Ayşe","Mehmet"];
+            var sonuc=elemanlar.concat(dizi);
+            for(var i=0;i<sonuc.length;i++){
+                alert(sonuc[i]);
+            }
+        }
+        pushMetodu();//Dizimize sondan elaman ekledi.
+        //sırala();Dizimizi alfabetik olarak sıralar.
+        unshift();//Dizimizin başına eleman ekledi.
+        concatMetodu();//İki diziyi birleştirir.
+        spliceMetodu();
+        elemanlarıGöster();
+    </script>
+    <body>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, perferendis!
+    </body>
+</html>
