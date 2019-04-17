@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <script>
+        function onloaded(){
+            alert("Sayfa yüklendi");
+        }
+        function onclicked(){
+            var p=document.getElementById("p1");
+            p.style.border="2px black solid";
+            p.style.color="red";
+        }
+    </script>
+    <body onload="onloaded();">
+        <p id="p1" onclick="onclicked();">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quas.</p>
+    </body>
+</html>

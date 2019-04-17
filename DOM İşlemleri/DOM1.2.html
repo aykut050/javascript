@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <script>
+        function onloaded(){
+            var p=document.getElementById("p1");//"p1" id'si olan elemanı bulduk ve onu p değişkenine atadık
+            if(p!==null){//p değişkeni boş mu kontrol ettik
+                p.innerHTML="Hello JS";//p1 id'li elemanın içeriğini değiştireceğiz.
+            }
+        }
+    </script>
+    <body onload="onloaded();">
+        <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, similique? Nobis assumenda culpa veniam molestias.</p>        
+    </body>
+</html>
