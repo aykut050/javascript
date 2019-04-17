@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <script>
+        function Metodum(){
+            console.log("Merhaba Dünya");
+        }
+        Metodum();
+        var Mesaj="12345";
+        console.log(Mesaj);
+        try{// try kod bloğunun içinde hata var ise catch'de bunlar nasıl işlemlere tabi tutulacağı belirtilir.
+            Metodum();
+            var a1=10;
+            var a2=0;
+            if(a2==0){
+                throw 'a2 \"0\" olamaz';
+            }
+
+        }catch(hata){//console.log()-->Konsola yazı yazdırır
+            console.log("Hata oluştu");
+            console.log(hata.message);//Hata mesajının yazdırır
+            console.log(hata.name);//hata mesajının ismini yazdırır
+            console.log(hata);
+            alert(hata);
+        }
+    </script>
+    <body>
+
+    </body>
+</html>
