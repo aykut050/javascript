@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <script>
+        function onayla(){
+            var a=document.getElementById("txtName");
+            var p=document.getElementById("list");
+            var li=document.createElement("li");
+            
+            li.innerText=a.value.toUpperCase();
+            p.appendChild(li);
+        }
+    </script>
+    <body>
+        <h1> İsim ekleyiniz </h1>
+        <input type="text" id="txtName" placeholder="İsim girinz" />
+        <hr>
+        
+        <button id="onay" type="button" onclick="onayla();"> Onay </button>
+        <p><b> Girilen isimler </b></p>
+        
+        <ul id="list">
+             
+        </ul>
+    </body>
+</html>
